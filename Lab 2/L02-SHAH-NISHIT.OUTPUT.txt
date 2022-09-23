@@ -1,0 +1,102 @@
+
+//OUTPUT 1
+
+JOB_TITLE                                 EMPLOYEES
+---------------------------------------- ----------
+Accounting Manager                                1
+President                                         1
+Marketing Manager                                 1
+Public Accountant                                 1
+Human Resources Representative                    1
+Purchasing Manager                                1
+Finance Manager                                   1
+Administration Assistant                          1
+Marketing Representative                          1
+Public Relations Representative                   1
+Administration Vice President                     2
+
+JOB_TITLE                                 EMPLOYEES
+---------------------------------------- ----------
+Stock Manager                                     5
+Programmer                                        5
+Purchasing Clerk                                  5
+Accountant                                        5
+Sales Manager                                     5
+Stock Clerk                                      20
+Shipping Clerk                                   20
+Sales Representative                             30
+
+19 rows selected. 
+
+//OUTPUT 2
+
+      HIGH        LOW    AVERAGE High Low Difference
+---------- ---------- ---------- -------------------
+      5000        100    1894.67                4900
+
+//OUTPUT 3
+
+  ORDER_ID TOTAL_ITEMS TOAL_AMOUNT
+---------- ----------- -----------
+        70           7  1278962.17
+        46          11  1269323.77
+        78           6  1198331.59
+         1          13  1143716.87
+        68           9  1088670.12
+        27          13  1084871.49
+        32           6  1081679.88
+        92           7  1050939.97
+        59           9  1043144.72
+
+9 rows selected. 
+
+//OUTPUT 4
+
+WAREHOUSE_ID WAREHOUSE_NAME            TOTAL_PRODUCTS
+------------ ------------------------- --------------
+           4 Seattle, Washington                14860
+           7 Mexico City                         9039
+           8 Beijing                            13482
+           1 Southlake, Texas                    5483
+           3 New Jersey                          7252
+           6 Sydney                             20457
+           2 San Francisco                      28613
+           5 Toronto                            12969
+           9 Bombay                              7357
+
+9 rows selected. 
+
+//OUTPUT 5
+
+CUSTOMER_ID customer name                  total number of orders
+----------- ------------------------------ ----------------------
+         44 Jabil Circuit                                       5
+         58 Health Net                                          1
+         69 Whole Foods Market                                  1
+        174 Oracle                                              0
+        196 DuPont                                              0
+        113 Microsoft                                           0
+        127 Alphabet                                            0
+        117 Home Depot                                          0
+        255 Waste Management                                    0
+         27 Assurant                                            0
+        129 Target                                              0
+
+CUSTOMER_ID customer name                  total number of orders
+----------- ------------------------------ ----------------------
+        226 Office Depot                                        0
+        197 Avnet                                               0
+         88 Walmart                                             0
+        128 Comcast                                             0
+
+15 rows selected. 
+
+//OUTPUT 6
+
+CATEGORY_ID Total Amount Average Amount
+----------- ------------ --------------
+          1     20041993      126050.27
+          2   13787520.6      131309.72
+          4   4918418.15       35640.71
+          5   13994160.8       53209.74
+
