@@ -1,0 +1,63 @@
+
+Procedure FIND_EVEN_ODD compiled
+
+The number 10 is even
+
+
+PL/SQL procedure successfully completed.
+
+
+Procedure FIND_EMPLOYEE compiled
+
+FIRST_NAME : Summer
+LAST_NAMENAME: Payne
+EMAIL: summer.payne@example.com
+PHONE: 515.123.8181
+HIRE_DATE: 07-JUN-16
+JOB_TITLE: Public Accountant
+FIRST_NAME : Rose
+LAST_NAMENAME: Stephens
+EMAIL: rose.stephens@example.com
+PHONE: 515.123.8080
+HIRE_DATE: 07-JUN-16
+JOB_TITLE: Accounting Manager
+
+
+PL/SQL procedure successfully completed.
+
+
+Procedure UPDATE_PRICE_BY_CATEGORY compiled
+
+Rows_updated: 70 lines
+
+
+PL/SQL procedure successfully completed.
+
+
+Procedure UPDATE_PRICE_UNDER_AVERAGE compiled
+
+LINE/COL  ERROR
+--------- -------------------------------------------------------------
+25/5      PLS-00113: END identifier 'UPDATE_PRICE_BY_CATEGORY' must match 'UPDATE_PRICE_UNDER_AVERAGE' at line 1, column 11
+Errors: check compiler log
+
+Error starting at line : 135 in command -
+BEGIN
+   UPDATE_PRICE_UNDER_AVERAGE;
+END;
+Error report -
+ORA-06550: line 2, column 4:
+PLS-00905: object DBS311_223NGG25.UPDATE_PRICE_UNDER_AVERAGE is invalid
+ORA-06550: line 2, column 4:
+PL/SQL: Statement ignored
+06550. 00000 -  "line %s, column %s:\n%s"
+*Cause:    Usually a PL/SQL compilation error.
+*Action:
+
+Procedure PORDUCT_PRICE_REPORT compiled
+
+Error trying to SELECT too many rows
+
+
+PL/SQL procedure successfully completed.
+
