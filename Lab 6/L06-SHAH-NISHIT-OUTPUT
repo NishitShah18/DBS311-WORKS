@@ -1,0 +1,115 @@
+
+Procedure FACTORIAL compiled
+
+120
+
+
+PL/SQL procedure successfully completed.
+
+720
+
+
+PL/SQL procedure successfully completed.
+
+
+Procedure SALARY_CALCULATOR compiled
+
+First Name: Jude
+Last Name: Rivera
+Salary: 13400.95640625
+
+
+PL/SQL procedure successfully completed.
+
+First Name: Blake
+Last Name: Cooper
+Salary: 13400.95640625
+
+
+PL/SQL procedure successfully completed.
+
+
+Error starting at line : 104 in command -
+CREATE PROCEDURE WAREHOUSE_REPORT IS L_WID WAREHOUSES.WAREHOUSE_ID % TYPE;
+L_WN WAREHOUSES.WAREHOUSE_NAME % TYPE;
+L_CITY LOCATIONS.CITY % TYPE;
+L_STATE LOCATIONS.STATE % TYPE;
+BEGIN
+FOR I IN 1..9 LOOP 
+SELECT
+      W.WAREHOUSE_ID,
+      W.WAREHOUSE_NAME,
+      L.CITY,
+      NVL(L.STATE, 'no state') INTO L_WID,
+      L_WN,
+      L_CITY,
+      L_STATE 
+FROM WAREHOUSES W 
+INNER JOIN LOCATIONS L 
+ON (W.LOCATION_ID = L.LOCATION_ID) 
+WHERE W.WAREHOUSE_ID = I;
+DBMS_OUTPUT.PUT_LINE('Warehouse ID: ' || L_WID);
+DBMS_OUTPUT.PUT_LINE('Warehouse name: ' || L_WN);
+DBMS_OUTPUT.PUT_LINE('City: ' || L_CITY);
+DBMS_OUTPUT.PUT_LINE('State: ' || L_STATE);
+DBMS_OUTPUT.PUT_LINE('');
+END
+LOOP;
+EXCEPTION 
+WHEN OTHERS 
+THEN DBMS_OUTPUT.PUT_LINE('Error Occured');
+END;
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Warehouse ID: 1
+Warehouse name: Southlake, Texas
+City: Southlake
+State: Texas
+
+Warehouse ID: 2
+Warehouse name: San Francisco
+City: South San Francisco
+State: California
+
+Warehouse ID: 3
+Warehouse name: New Jersey
+City: South Brunswick
+State: New Jersey
+
+Warehouse ID: 4
+Warehouse name: Seattle, Washington
+City: Seattle
+State: Washington
+
+Warehouse ID: 5
+Warehouse name: Toronto
+City: Toronto
+State: Ontario
+
+Warehouse ID: 6
+Warehouse name: Sydney
+City: Sydney
+State: New South Wales
+
+Warehouse ID: 7
+Warehouse name: Mexico City
+City: Mexico City
+State: Distrito Federal,
+
+Warehouse ID: 8
+Warehouse name: Beijing
+City: Beijing
+State: no state
+
+Warehouse ID: 9
+Warehouse name: Bombay
+City: Bombay
+State: Maharashtra
+
+
+
+PL/SQL procedure successfully completed.
+
